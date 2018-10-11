@@ -1,0 +1,10 @@
+.data{
+  margin: 5px 5px 5px 5px;
+  height: 50%;
+}
+.block {
+  background-image: url('/assets/1.jpg');
+}
+.container-block{
+  margin-left: 1%;
+}

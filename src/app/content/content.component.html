@@ -1,0 +1,15 @@
+<div id="panel-group" class="row container-block">
+  <div id = "block-{{tile.tileNumber}}" class="panel col-lg-3 col-md-4 col-sm-6 col-xs-10 data block" *ngFor="let tile of tiles" (mouseenter) = "showOptionsToUser(tile.tileNumber)" (mouseleave) = "hideOptionsToUser(tile.tileNumber)">
+      <div class="panel-heading">
+            <div class="row">
+                <i class='glyphicon pull-right glyphicon-trash data' style="display: none" id="trash-{{tile.tileNumber}}" (click) = "deleteTile(tile.tileNumber)"></i>
+                <i class='glyphicon pull-right glyphicon-folder-open data' style="display: none" id="open-{{tile.tileNumber}}"></i>
+                <i class='glyphicon pull-right glyphicon-print data' style="display: none" id="print-{{tile.tileNumber}}"></i>
+                <h4>{{tile.title}}</h4>
+            </div>
+      </div>
+       <div id="collapse1" class="panel-collapse">
+        <div class="panel-body">{{tile.description}}</div>
+      </div>
+  </div>
+</div>
